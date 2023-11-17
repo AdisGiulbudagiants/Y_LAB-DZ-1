@@ -1,0 +1,93 @@
+.main {
+  box-shadow: 0px 5px 10px 2px rgba(0, 0, 0, 0.4);
+  -webkit-box-shadow: 0px 5px 10px 2px rgba(0, 0, 0, 0.4);
+  -moz-box-shadow: 0px 5px 10px 2px rgba(0, 0, 0, 0.4);
+  min-width: 35vw;
+  min-height: 50vh;
+  display: flex;
+  justify-content: center;
+  border-radius: 3%;
+  background-color: #FF6A00;
+}
+
+.header {
+  font-size: 40px;
+  margin-top: 5%;
+  color: white;
+  user-select: none;
+}
+
+.form {
+  width: 85%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+input[type=email], input[type=password] {
+  height: 50px;
+  width: 80%;
+  margin-top: 5%;
+  border-radius: 10px;
+  border: none;
+  font-size: 18px;
+  padding-left: 20px;
+}
+input[type=email]::placeholder, input[type=password]::placeholder {
+  color: black;
+  opacity: 70%;
+  font-size: 18px;
+}
+input[type=email]:focus, input[type=password]:focus {
+  outline: 2px solid #5dd0c0;
+}
+
+.checkbox {
+  display: flex;
+  width: 80%;
+  height: 20px;
+  justify-content: start;
+  align-items: center;
+  margin-top: 5%;
+}
+.checkbox:hover {
+  cursor: pointer;
+}
+
+input[type=checkbox] {
+  width: 25px;
+  height: 25px;
+  outline: none;
+  margin-right: 15px;
+  accent-color: #5dd0c0;
+}
+
+span {
+  font-size: 18px;
+  color: white;
+  user-select: none;
+}
+
+button[type=submit] {
+  box-shadow: 0px 5px 10px 2px rgba(0, 0, 0, 0.4);
+  -webkit-box-shadow: 0px 5px 10px 2px rgba(0, 0, 0, 0.4);
+  -moz-box-shadow: 0px 5px 10px 2px rgba(0, 0, 0, 0.4);
+  width: 50%;
+  height: 60px;
+  margin-top: 5%;
+  border-radius: 20px;
+  border: none;
+  background-color: #5dd0c0;
+  font-size: 35px;
+  color: white;
+  cursor: pointer;
+  transition-duration: 0.3s;
+  transition-property: all;
+  transition-timing-function: easy-in;
+}
+button[type=submit]:hover {
+  transform: scale(1.05);
+}
+button[type=submit]:active {
+  transform: scale(1);
+}
