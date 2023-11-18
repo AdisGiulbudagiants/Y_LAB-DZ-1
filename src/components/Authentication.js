@@ -49,8 +49,6 @@ const Authentication = () => {
     }
   }
 
-  console.log(JSON.stringify(response))
-
   return (
     <div className={styles.main}>
       <form className={styles.form}>
